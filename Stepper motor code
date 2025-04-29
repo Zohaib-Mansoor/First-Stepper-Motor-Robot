@@ -1,0 +1,13 @@
+#include <Stepper.h>
+
+int motorSpeed = 20;
+Stepper myStepper(2048, 8,10,9,11);
+
+void loop() {
+    myStepper.setSpeed(motorSpeed);
+    myStepper.step(1024);
+}
+
+void setup() {
+    
+}
